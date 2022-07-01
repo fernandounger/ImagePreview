@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.picture{
+    background-color: rgba(221, 221, 221, 0.681);
+    color: #FFF;
+    border: 2px dashed blueviolet;
+    max-width: 420px;
+    aspect-ratio: 16/9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: color 300ms ease-in-out, background-color 300ms ease-in-out, outline 300ms ease-in-out;
+    margin: 150px auto;
+    outline: none;
+}
+.picture:hover {
+    background: rgba(204, 204, 204, 0.919);
+}
+.picture:focus {
+    outline: 1px solid blueviolet;
+    box-shadow:  0 0 10px blueviolet;
+}
+.picture .picture__input{
+    display: none;
+}
+.picture .picture__image{
+    color: blueviolet;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.picture__img{
+    max-width: 100%;
+}
